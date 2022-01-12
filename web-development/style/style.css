@@ -1,0 +1,54 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0%;
+    line-height: 1.5em;
+}
+#header{
+    background-color: black;
+    margin: 0%;
+    width: 100%;
+}
+#header h1{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+.container{
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
+}
+#navBar{
+    float: right;
+}
+#navBar li{
+    margin-top: 0%;
+    display: inline;
+    color: white;
+    padding-left: 15px;
+}
+#navBar a{
+    color: white;
+    text-decoration: none;
+}
+#navBar a:hover{
+    color:turquoise;
+    text-decoration: underline
+}
+#main{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    background-image: url("../images/food.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#main h1{
+    background-color: white;
+    background-size: 100px;
+    color: black;
+    font-size: 3em;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+}
