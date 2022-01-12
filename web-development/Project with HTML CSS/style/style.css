@@ -136,9 +136,11 @@ footer p {
   padding: 40px;
 }
 #followInstagram img:hover{
-    height: 150px;
-    width: 150px;
-    opacity: 80%
+    /* height: 200px;
+    width: 200px; */
+    opacity: 80%;
+    transition: transform .2s;
+    transform: scale(1.5);
   }
 #followInstagram h1 {
     background-color: white;
