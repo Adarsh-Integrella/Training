@@ -95,48 +95,72 @@ button:hover {
   color: black;
 }
 
-footer{
+footer {
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+  min-height: 100px;
+}
+footer p {
+  padding-top: 30px;
+  color: white;
+}
+#quote {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  min-height: 400px;
+}
+#quote #review {
+  text-align: center;
+}
+#quote q {
+  display: block;
+  color: white;
+  font-size: 2em;
+  line-height: 50px;
+}
+#quote small {
+  color: white;
+  padding-top: 10px;
+}
+#followInstagram {
     text-align: center;
-    background-color: rgb(37, 37, 37);
-    min-height: 100px;
+  min-height: 300px;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
-footer p{
-    padding-top: 30px;
-    color: white;
+#followInstagram img{
+  height: 150px;
+  width: 150px;
 }
-#quote{
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(43, 43, 43);
-    min-height: 400px;
-}
-#quote #review{
-    text-align: center;
-}
-#quote q{
-    display: block;
-    color: white;
+#followInstagram img:hover{
+    height: 150px;
+    width: 150px;
+    opacity: 80%
+  }
+#followInstagram h1 {
+    background-color: white;
+    line-height: 1em;
+    color: black;
     font-size: 2em;
-    line-height: 50px;
-}
-#quote small{
-    color: white;
-    padding-top: 10px;
-}
-@media (max-width:600px) {
-    #mainSection{
-        width: 100%;
-        float: none;
-    }
-    #aside{
-        width: 100%;
-        float: none;
-    }
-    #header{
-        text-align: center;
-    }
-    #navBar{
-        float: none;
-    }
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+  }
+@media (max-width: 600px) {
+  #mainSection {
+    width: 100%;
+    float: none;
+  }
+  #aside {
+    width: 100%;
+    float: none;
+  }
+  #header {
+    text-align: center;
+  }
+  #navBar {
+    float: none;
+  }
 }
