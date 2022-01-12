@@ -164,4 +164,9 @@ footer p {
   #navBar {
     float: none;
   }
+  #followInstagram img{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+  }
 }
