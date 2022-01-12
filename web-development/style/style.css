@@ -124,3 +124,19 @@ footer p{
     color: white;
     padding-top: 10px;
 }
+@media (max-width:600px) {
+    #mainSection{
+        width: 100%;
+        float: none;
+    }
+    #aside{
+        width: 100%;
+        float: none;
+    }
+    #header{
+        text-align: center;
+    }
+    #navBar{
+        float: none;
+    }
+}
