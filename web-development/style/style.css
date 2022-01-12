@@ -133,6 +133,7 @@ footer p {
 #followInstagram img{
   height: 150px;
   width: 150px;
+  padding: 40px;
 }
 #followInstagram img:hover{
     height: 150px;
