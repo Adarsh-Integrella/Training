@@ -600,7 +600,7 @@
 //     console.log("third function");
 //   };
 //   console.log("inside");
-//   myFunction(); 
+//   myFunction();
 //   myFunction2();
 // }
 // app();
@@ -639,7 +639,95 @@
 //     console.log(gender);
 // }
 
+
 //-----------------------------------------------------------
 
+//////Function returning function
 
+// function myfunc() {
+//   return myfunc2();
+// }
+// function myfunc2() {
+//     console.log("myfunc2");
+// }
+// myfunc();
 
+//-----------------------------------------------------------
+/////.   ASYNC ************************************
+
+//settime
+
+// setTimeout(()=>{
+//     console.log("output aaya hai");
+// }, 5000)
+
+//-----------------------------------------------------------
+/// Callback function
+
+// function myFunc()
+// {
+//     console.log("my func called");
+// }
+// function myfunc2(callback)
+// {
+//     callback();
+// }
+// myfunc2(myFunc);
+
+// callback builds the relationship like parent, child, grand child
+
+//-----------------------------------------------------------
+//////////////////// Search Methods
+// String indexOf()
+// String lastIndexOf()
+// String startsWith()
+// String endsWith()
+
+// let str = "Please locate where 'locate' occurs!";
+// console.log(str.indexOf("locate"));
+// console.log(str.lastIndexOf("locate"));
+// console.log(str.indexOf("locaate"));
+// console.log(str.search("locate"));
+// console.log(str.match(/please/i));
+// console.log(str.includes("occurs"));
+// console.log(str.startsWith("Please"));
+
+//-----------------------------------------------------------
+
+// const points = [40, 100, 1, 5, 25, 10];
+// pointsGet = (()=> {
+//     let maxi=0;
+//     for(let x of points){
+//         maxi = Math.max(maxi, x);
+//     }
+//     console.log(maxi);
+// });
+// pointsGet();
+//console.log(points);
+// -------------------------------------------------------
+
+// const d=new Date();
+// console.log(d.getFullYear())
+
+// Create a Set
+const letters = new Set();
+
+// Create Variables
+const a = "a";
+const b = "b";
+const c = "c";
+
+// Add Variables to the Set
+// letters.add(a);
+// letters.add(b);
+// letters.add(c);
+// letters.add(a);
+// letters.add(b);
+// letters.add(c);
+// letters.add(a);
+// letters.add(b);
+// letters.add(c);
+
+// letters.forEach(function(value){
+//     console.log(value);
+// })
