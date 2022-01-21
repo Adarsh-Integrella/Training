@@ -639,7 +639,6 @@
 //     console.log(gender);
 // }
 
-
 //-----------------------------------------------------------
 
 //////Function returning function
@@ -710,12 +709,12 @@
 // console.log(d.getFullYear())
 
 // Create a Set
-const letters = new Set();
+// const letters = new Set();
 
-// Create Variables
-const a = "a";
-const b = "b";
-const c = "c";
+// // Create Variables
+// const a = "a";
+// const b = "b";
+// const c = "c";
 
 // Add Variables to the Set
 // letters.add(a);
@@ -731,3 +730,91 @@ const c = "c";
 // letters.forEach(function(value){
 //     console.log(value);
 // })
+
+// ------------------------------------------------------
+// // Errors handling
+// let x = 50;
+// try {
+//   if (x == "") throw "empty";
+//   if (isNaN(x)) throw "not a number";
+//   x = Number(x);
+//   if (x < 5) throw "too low";
+//   if (x > 10) throw "too high";
+// } catch (err) {
+//   console.log(err.message);
+// }finally{
+//     console.log("me aise he print ho rha hu")
+// }
+
+// ------------------------------------------------------
+///////////. Hoisting
+
+// var x = 5; // Initialize x
+// var y = 7; // Initialize y
+
+// elem = document.getElementById("demo"); // Find an element
+// elem.innerHTML = x + " " + y;           // Display x and y
+
+// var x = 5; // Initialize x
+
+// elem = document.getElementById("demo"); // Find an element
+// elem.innerHTML = x + " " + y;           // Display x and y
+
+// var y = 7; // Initialize y
+
+///-----------------------------------------------------------
+///OOPS
+
+// class car{
+//     constructor(model, year)
+//     {
+//         this.model=model;
+//         this.year=year;
+//     }
+//     howOld(){
+//         let date= new Date();
+//         return date.getFullYear() - this.year;
+//     }
+// }
+
+// let myCar = new car("Ford mustang", 2019);
+// console.log(`${myCar.howOld()} years old`);
+
+
+// class Car {
+//     constructor(brand) {
+//       this.carname = brand;
+//     }
+//     present() {
+//       return 'I have a ' + this.carname;
+//     }
+//   }
+
+//   class Model extends Car {
+//     constructor(brand, mod) {
+//       super(brand);
+//       this.model = mod;
+//     }
+//     show() {
+//       return this.present() + ', it is a ' + this.model;
+//     }
+//   }
+  
+//   let myCar = new Model("Ford", "Mustang");
+//   console.log(myCar.show());
+
+///-----------------------------------------------------------
+
+//////javascript to json
+
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     eyeColor: "blue"
+//   };
+//  let yehDekho = JSON.stringify(person);
+//  console.log(yehDekho)
+
+///-----------------------------------------------------------
+
