@@ -780,7 +780,6 @@
 // let myCar = new car("Ford mustang", 2019);
 // console.log(`${myCar.howOld()} years old`);
 
-
 // class Car {
 //     constructor(brand) {
 //       this.carname = brand;
@@ -799,7 +798,7 @@
 //       return this.present() + ', it is a ' + this.model;
 //     }
 //   }
-  
+
 //   let myCar = new Model("Ford", "Mustang");
 //   console.log(myCar.show());
 
@@ -818,3 +817,142 @@
 
 ///-----------------------------------------------------------
 
+//CALLBACK
+// function functionOne(para)
+// {
+//     console.log(`Here is the sum : ${para}`);
+// }
+// function Secondfunction(num1, num2, callBack)
+// {
+//     let num=num1+num2;
+//     callBack(num);
+// }
+// Secondfunction(10, 40, functionOne);
+
+///-----------------------------------------------------------
+// Promises
+
+// function myDisplayer(some) {
+//     console.log(some);
+//   }
+
+//   let myPromise = new Promise(function(myResolve, myReject) {
+//     let x = 1;
+
+//   // The producing code (this may take some time)
+
+//     if (x == 0) {
+//       myResolve("OK");
+//     } else {
+//       myReject("Error");
+//     }
+//   });
+
+//   myPromise.then(
+//     function(value) {myDisplayer(value);},
+//     function(error) {myDisplayer(error);}
+//   );
+
+//****************/
+
+// 3 states : Pending, Fulfilled, Rejected
+
+// const myPromise = new Promise((resolve, reject) => {
+//   const error = false;
+//   if (!error) {
+//     resolve("Resolved successfully!");
+//   } else {
+//     reject("No! rejected the promise.");
+//   }
+// });
+// console.log(myPromise);
+// myPromise
+//   .then((value) => {
+//     return value;
+//   })
+//   .then((newValue) => {
+//     console.log(newValue);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// const myNextPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("myNext Promise resolved");
+//   }, 3000);
+// });
+
+// myNextPromise.then((value) => {
+//   console.log(value);
+// });
+// myPromise.then((value) => {
+//   console.log(value);
+// });
+
+// const users = fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((Response) => {
+//     return Response.json();
+//   })
+//   .then((data) => {
+//     data.forEach((user) => {
+//       console.log(user);
+//     });
+//   });
+
+//Async / Await
+
+// const myUsers = {
+//   userList: [],
+// };
+// const myfunction = async () => {
+//   const Response = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const jsonUserData = await Response.json();
+//   return jsonUserData;
+// };
+
+// const returnJson = async () => {
+//   const data = await myfunction();
+//   myUsers.userList = data;
+// };
+// returnJson();
+// console.log(myUsers.userList);
+
+//************************ */
+// const users = fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((Response) => {
+//     return Response.json();
+//   })
+//   .then((data) => {
+//     data.forEach((user) => {
+//       console.log(user);
+//     });
+//   });
+
+// ----------------- Examples
+//Example 1
+
+// const getAllUserEmail = async () => {
+//   const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//   const userDataJson = await response.json();
+//   const emailArrayOfUsers = userDataJson.map((user) => {
+//     return user.email;
+//   });
+
+//   console.log(emailArrayOfUsers);
+//   return emailArrayOfUsers;
+// };
+// getAllUserEmail();
+
+//Example 2
+const getDadJoke = async () => {
+  const response = await fetch("https://icanhazdadjoke.com/", {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  const jsonJoke = await response.json();
+  console.log(jsonJoke.joke);
+};
+getDadJoke();
