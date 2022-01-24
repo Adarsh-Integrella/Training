@@ -956,3 +956,13 @@
 //   console.log(jsonJoke.joke);
 // };
 // getDadJoke();
+
+//-----------------------------------------------------------------------
+////// Rest operator
+// const demo = (...demoFun) => {
+//   for (let x in demoFun) {
+//     console.log(x);
+//   }
+// };
+
+// demo(1, 2, 3, 4, 5, 6, 6, 7, 7, 7, 7, 77, 7, 77, 4545);
